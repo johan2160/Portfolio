@@ -24,12 +24,11 @@ Este sitio web es un portafolio personal creado para mostrar mis habilidades y p
 - React
 - Tailwind CSS
 
-
 ## Contacto
 Si tienes alguna pregunta o deseas contactarme, puedes encontrarme en:
 
-- Correo electrónico: johandev21@gmail.com
+- Correo electrónico: [johandev21@gmail.com](mailto:johandev21@gmail.com)
 - LinkedIn: [Johan Carrasco](https://www.linkedin.com/in/johan-carrasco-493a85319/)
-- GitHub: [johan2160](https://github.com/tu-usuario](https://github.com/johan2160)
+- GitHub: [johan2160](https://github.com/johan2160)
 
 ¡Gracias por visitar mi portafolio!
