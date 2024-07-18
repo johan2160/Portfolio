@@ -1,4 +1,3 @@
-```
 # Mi Portafolio
 
 Bienvenido a mi sitio web portafolio. Aquí encontrarás información sobre mis proyectos, habilidades y experiencia profesional.
@@ -34,4 +33,3 @@ Si tienes alguna pregunta o deseas contactarme, puedes encontrarme en:
 - GitHub: [johan2160](https://github.com/tu-usuario](https://github.com/johan2160)
 
 ¡Gracias por visitar mi portafolio!
-```
