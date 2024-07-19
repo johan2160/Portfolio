@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from './Button';
 import emailjs from '@emailjs/browser';
 
@@ -10,6 +10,7 @@ const Contactme = () => {
   };
 
   const [formValues, setFormValues] = useState(initialFormValues);
+  const [isEmailSent, setIsEmailSent] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -22,17 +23,27 @@ const Contactme = () => {
     emailjs.sendForm('service_qal9fp6', 'template_jdca0tg', e.target, 'SFcWM1u1BUM6dGD95')
       .then(
         () => {
-          alert('Mensaje enviado!');
           setFormValues(initialFormValues);
+          setIsEmailSent(true);
         },
         (error) => {
-          alert('Error...', error.text);
+          console.log('Error...', error.text);
         },
       );
   };
 
+  useEffect(() => {
+    let timer;
+    if (isEmailSent) {
+      timer = setTimeout(() => {
+        setIsEmailSent(false);
+      }, 3000);
+    }
+    return () => clearTimeout(timer);
+  }, [isEmailSent]);
+
   return (
-    <section id='contactme' className='flex flex-col items-center justify-center md:h-screen p-4 mt-64 text-center text-white md:mt-80 xl:mt-96'>
+    <section id='contactme' className='flex flex-col items-center justify-center p-4 mt-64 text-center text-white md:h-screen md:mt-80 xl:mt-96'>
       <h2 className='text-3xl md:text-5xl mb-14'>Contáctame</h2>
       <form onSubmit={sendEmail} className='w-full max-w-[496px] xl:max-w-[774px] flex flex-col gap-8'>
         <div className='flex flex-col gap-6 xl:flex-row'>
@@ -76,6 +87,7 @@ const Contactme = () => {
           ></textarea>
         </div>
         <div className='self-center'><Button text="Enviar mensaje" /></div>
+        {isEmailSent && <span className='p-5 font-semibold rounded-md text-background bg-primary'>Mensaje enviado correctamente ✅!</span>}
       </form>
     </section>
   );
