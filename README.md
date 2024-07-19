@@ -1,8 +1,34 @@
-# React + Vite
+# Mi Portafolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi sitio web portafolio. Aquí encontrarás información sobre mis proyectos, habilidades y experiencia profesional.
 
-Currently, two official plugins are available:
+## Tabla de Contenidos
+- [Descripción](#descripción)
+- [Características](#características)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Contacto](#contacto)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descripción
+Este sitio web es un portafolio personal creado para mostrar mis habilidades y proyectos en el campo de la ingeniería informática. Incluye secciones sobre mí, mis proyectos, habilidades técnicas y cómo contactarme.
+
+## Características
+- Página de inicio con una breve introducción
+- Lista de habilidades técnicas
+- Galería de proyectos con descripciones y enlaces a repositorios
+- Formulario de contacto
+
+## Tecnologías Utilizadas
+- HTML
+- CSS
+- JavaScript
+- React
+- Tailwind CSS
+
+## Contacto
+Si tienes alguna pregunta o deseas contactarme, puedes encontrarme en:
+
+- Correo electrónico: [johandev21@gmail.com](mailto:johandev21@gmail.com)
+- LinkedIn: [Johan Carrasco](https://www.linkedin.com/in/johan-carrasco-493a85319/)
+- GitHub: [johan2160](https://github.com/johan2160)
+
+¡Gracias por visitar mi portafolio!
