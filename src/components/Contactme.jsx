@@ -56,7 +56,7 @@ const Contactme = () => {
               placeholder='John Doe'
               value={formValues.user_name}
               onChange={handleInputChange}
-              className='px-4 py-3 rounded-md bg-darkgrey'
+              className='px-4 py-3 border-2 rounded-md outline-none border-darkgrey focus:border-primary bg-darkgrey'
               required
             />
           </div>
@@ -69,7 +69,7 @@ const Contactme = () => {
               placeholder='johndoe@gmail.com'
               value={formValues.user_email}
               onChange={handleInputChange}
-              className='px-4 py-3 rounded-md bg-darkgrey'
+              className='px-4 py-3 border-2 rounded-md outline-none border-darkgrey focus:border-primary bg-darkgrey'
               required
             />
           </div>
@@ -82,12 +82,12 @@ const Contactme = () => {
             placeholder="Como anda la cosa?"
             value={formValues.message}
             onChange={handleInputChange}
-            className='px-4 py-3 rounded-md min-h-72 bg-darkgrey'
+            className='px-4 py-3 border-2 rounded-md outline-none border-darkgrey focus:border-primary min-h-72 bg-darkgrey'
             required
           ></textarea>
         </div>
         <div className='self-center'><Button text="Enviar mensaje" /></div>
-        {isEmailSent && <span className='p-5 font-semibold rounded-md text-background bg-primary'>Mensaje enviado correctamente ✅!</span>}
+        {isEmailSent && <span className='p-5 font-semibold rounded-md outline-none text-background bg-primary'>Mensaje enviado correctamente ✅!</span>}
       </form>
     </section>
   );
