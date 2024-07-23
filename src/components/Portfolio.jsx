@@ -37,7 +37,7 @@ const Portfolio = () => {
   
   return (
     <section id='portfolio' className='flex flex-col items-center mt-64 md:mt-80 xl:mt-96 pt-4 bg-background text-white text-center text-[2rem]'>
-      <h2 className='mb-8 text-3xl md:text-5xl'>Mis Proyectos</h2>
+      <h2 className='mb-8 text-3xl md:text-5xl text-highlight'>Mis Proyectos</h2>
       <span className='p-2 text-sm italic text-left text-gray-300 max-w-96 mb-14'>
         Nota: Los siguientes proyectos no representan mi nivel actual de habilidad, pero son los únicos disponibles en este momento para presentar en este sitio web. Serán reemplazados por proyectos más avanzados en el futuro.
       </span>

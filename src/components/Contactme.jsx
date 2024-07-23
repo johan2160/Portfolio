@@ -44,7 +44,7 @@ const Contactme = () => {
 
   return (
     <section id='contactme' className='flex flex-col items-center justify-center p-4 mt-64 text-center text-white md:h-screen md:mt-80 xl:mt-96'>
-      <h2 className='text-3xl md:text-5xl mb-14'>Contáctame</h2>
+      <h2 className='text-3xl md:text-5xl mb-14 text-highlight'>Contáctame</h2>
       <form onSubmit={sendEmail} className='w-full max-w-[496px] xl:max-w-[774px] flex flex-col gap-8'>
         <div className='flex flex-col gap-6 xl:flex-row'>
           <div className='flex flex-col w-full gap-2'>
