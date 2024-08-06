@@ -28,24 +28,3 @@ html {
   filter: blur(10px);
   opacity: 0.5;
 }
-
-.text-highlight {
-  position: relative;
-}
-
-@media (min-width: 1280px) {
-  .text-highlight::before,
-  .text-highlight::after {
-    content: "";
-    position: absolute;
-    width: 18rem; 
-    height: 2.188rem;
-    border-radius: 0.375rem;
-  }
-  
-  .text-highlight::before {
-    bottom: -10px;
-    right: -10px;
-    background: linear-gradient(to right, #eeb48729, #88664d24);
-  }
-}
