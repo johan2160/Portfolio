@@ -17,7 +17,7 @@ const Navbar = ({name, link1, link2, link3}) => {
     <section className='relative flex justify-center p-3 text-primary md:bg-primary md:text-black md:py-6 md:px-14 xl:px-40'>
       <div className='w-full max-w-[1200px] flex justify-between'>
         <h3 className='text-2xl'>{name}</h3>
-        <ul className={`flex flex-col gap-8 rounded-br-[80px] px-3 pt-3 pb-10 fixed z-50 top-0 md:rounded-br-0 md:flex-row md:gap-8 md:p-0 md:static bg-primary text-black transition-position ease-in-out duration-300 ${isMenuOpen ? 'left-0' : 'left-[-200%]'}`}>
+        <ul className={`flex flex-col gap-8 rounded-br-[80px] px-3 pt-3 pb-10 absolute z-50 top-0 md:rounded-br-0 md:flex-row md:gap-8 md:p-0 md:static bg-primary text-black transition-position ease-in-out duration-300 ${isMenuOpen ? 'left-0' : 'left-[-200%]'}`}>
           <div className='flex gap-32 md:hidden'>
             <h3 className='text-2xl'>{name}</h3>
             <RiCloseLine className='cursor-pointer' onClick={closeMenu}></RiCloseLine>
