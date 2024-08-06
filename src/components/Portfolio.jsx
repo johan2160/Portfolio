@@ -5,7 +5,7 @@ import { RiGithubFill, RiLinksFill } from '@remixicon/react';
 const Portfolio = () => {
   const projectsCards = projects.map(project => (
     <div key={project.id} className='flex flex-col gap-5 items-center max-w-[496px] xl:flex-row xl:max-w-[1048px] xl:gap-16 rounded-md p-4'>
-      {project.image && <img src={project.image} alt={project.name} className='max-w-[494px] w-full' />}
+      {project.image && <img src={project.image} alt={project.name} className='max-w-[494px] w-full rounded-md shadow-gradient' />}
       <div className='flex flex-col items-center gap-6 xl:items-start'>
         <div className='flex flex-col gap-3'>
           <h3 className='text-2xl xl:text-start'>{project.name}</h3>
@@ -37,10 +37,7 @@ const Portfolio = () => {
   
   return (
     <section id='portfolio' className='flex flex-col items-center mt-64 md:mt-80 xl:mt-96 pt-4 bg-background text-white text-center text-[2rem]'>
-      <h2 className='mb-8 text-3xl md:text-5xl text-highlight'>Mis Proyectos</h2>
-      <span className='p-2 text-sm italic text-left text-gray-300 max-w-96 mb-14'>
-        Nota: Los siguientes proyectos no representan mi nivel actual de habilidad, pero son los únicos disponibles en este momento para presentar en este sitio web. Serán reemplazados por proyectos más avanzados en el futuro.
-      </span>
+      <h2 className='mb-16 text-3xl md:text-5xl'>Mis Proyectos</h2>
       <div className='flex flex-col max-w-5xl text-base gap-14'>
         {projectsCards}
       </div>
