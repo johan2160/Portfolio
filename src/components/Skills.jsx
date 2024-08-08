@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Marquee from "react-fast-marquee";
 import { RiBootstrapFill, RiCss3Fill, RiGithubFill, RiHtml5Fill, RiJavascriptFill, RiReactjsFill, RiTailwindCssFill } from '@remixicon/react';
-import Python from '../assets/icons/python.svg';
-import MongoDB from '../assets/icons/mongodb.svg';
-import MySQL from '../assets/icons/mysql.svg';
+import Python from '../../public/assets/icons/python.svg';
+import MongoDB from '../../public/assets/icons/mongodb.svg';
+import MySQL from '../../public/assets/icons/mysql.svg';
 
 const Skills = () => {
   const [iconSize, setIconSize] = useState(64);

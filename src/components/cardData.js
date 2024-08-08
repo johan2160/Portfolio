@@ -1,14 +1,10 @@
-import comingSoon from "../assets/withoutoption.jpg";
-import jsIcon from "../assets/icons/javascript.svg";
-import htmlIcon from "../assets/icons/html.svg";
-import cssIcon from "../assets/icons/css.svg";
-import reactIcon from "../assets/icons/reactjs.svg";
-import tailwindIcon from "../assets/icons/tailwind.svg";
-import nodejsIcon from "../assets/icons/nodejs.svg";
-import bootstrapIcon from "../assets/icons/bootstrap.svg";
-import adminDashboard from "../assets/images/admin-dashboard.png"
-import etchASketch from "../assets/images/etch-a-sketch.png"
-import eva2FrontEnd from "../assets/images/eva2-frontend.png"
+import jsIcon from "../../public/assets/icons/javascript.svg";
+import htmlIcon from "../../public/assets/icons/html.svg";
+import cssIcon from "../../public/assets/icons/css.svg";
+import bootstrapIcon from "../../public/assets/icons/bootstrap.svg";
+import adminDashboard from "../../public/assets/images/admin-dashboard.png"
+import etchASketch from "../../public/assets/images/etch-a-sketch.png"
+import eva2FrontEnd from "../../public/assets/images/eva2-frontend.png"
 
 export const projects = [
   {
