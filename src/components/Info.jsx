@@ -1,5 +1,5 @@
 import React from 'react'
-import profileImg from '../../public/assets/profilepic.jpeg';
+import profileImg from '../../public/assets/profile-image.jpeg';
 import cv from '../../public/assets/cv-johancarrasco.pdf'
 import { RiFacebookBoxFill, RiGithubFill, RiLinkedinBoxFill } from '@remixicon/react';
 import Button from './Button';
