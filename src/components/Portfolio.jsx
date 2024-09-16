@@ -21,11 +21,11 @@ const Portfolio = () => {
         <div className='flex flex-col items-center gap-3 xl:items-start'>
           <p className='xl:text-start'>{project.description}</p>
           <div className='flex gap-5'>
-            <a href={project.codeLink} target={project.codeLink ? '_blank' : ''} className='flex p-[10px] rounded-md gap-2 bg-darkgrey text-white hover:bg-[#272727]'>
+            <a href={project.codeLink} target={project.codeLink ? '_blank' : ''} className='flex p-[10px] rounded-md gap-2 bg-darkgrey text-content hover:bg-linkhover'>
               <RiGithubFill />
               <span>Code</span>
             </a>
-            <a href={project.demoLink} target={project.demoLink ? '_blank' : ''} className='flex p-[10px] rounded-md gap-2 bg-darkgrey text-white hover:bg-[#272727] transition-colors'>
+            <a href={project.demoLink} target={project.demoLink ? '_blank' : ''} className='flex p-[10px] rounded-md gap-2 bg-darkgrey text-content hover:bg-linkhover transition-colors'>
               <RiLinksFill />
               <span>Preview</span>
             </a>
@@ -36,7 +36,7 @@ const Portfolio = () => {
   ));
   
   return (
-    <section id='portfolio' className='flex flex-col items-center mt-64 md:mt-80 xl:mt-96 pt-4 bg-background text-white text-center text-[2rem]'>
+    <section id='portfolio' className='flex flex-col items-center mt-64 md:mt-80 xl:mt-96 pt-4 bg-background text-content text-center text-[2rem]'>
       <h2 className='mb-16 text-3xl md:text-5xl'>Mis Proyectos</h2>
       <div className='flex flex-col max-w-5xl text-base gap-14'>
         {projectsCards}
