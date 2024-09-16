@@ -74,14 +74,14 @@ const Navbar = ({ name, link1, link2, link3 }) => {
           {/* Conditional rendering based on current theme */}
           {theme !== 'light' && (
             <li className='flex items-center justify-center gap-2' >
-              <p className='uppercase cursor-pointer md:hidden' onClick={() => changeTheme('light')}>Change to light</p>
+              <p className='uppercase cursor-pointer md:hidden' onClick={() => changeTheme('light')}>Modo claro</p>
               <RiSunLine className='cursor-pointer' onClick={() => changeTheme('light')}/>
             </li>
           )}
 
           {theme !== 'dark' && (
             <li className='flex items-center justify-center gap-2' >
-              <p className='uppercase cursor-pointer md:hidden' onClick={() => changeTheme('dark')}>Change to dark</p>
+              <p className='uppercase cursor-pointer md:hidden' onClick={() => changeTheme('dark')}>Modo oscuro</p>
               <RiMoonLine className='cursor-pointer' onClick={() => changeTheme('dark')}/>
             </li>
           )}
