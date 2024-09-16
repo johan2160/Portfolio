@@ -6,7 +6,7 @@ import Button from './Button';
 
 const Info = ({name, profession, btnText}) => {
   return (
-    <section id='info' className='flex flex-col items-center justify-center gap-8 px-3 pt-20 text-center text-white xl:pt-0 xl:h-screen md:px-0 bg-background'>
+    <section id='info' className='flex flex-col items-center justify-center gap-8 px-3 pt-20 text-center text-content xl:pt-0 xl:h-screen md:px-0 bg-background'>
       <div className="flex flex-col items-center max-w-md gap-8 mb-24 wrapper xl:flex-row xl:max-w-7xl xl:gap-24 ">
         <img src={profileImg} className='w-full max-w-md rounded-md shadow-gradient' alt="Profile picture" /> 
         <div className="flex flex-col items-center gap-4 xl:items-start personal-info xl:max-w-lg">
