@@ -10,6 +10,7 @@
     --primary: 216, 70%, 49%;
     --selectionbg: 216, 68%, 85%;
     --selectiontxt: 210, 3%, 15%;
+    --btnactive: 0, 0%, 91%;
     --darkgrey: 0, 0%, 96%;
     --linkhover: 0, 0%, 94%;
     --required: 11, 100%, 54%;
@@ -58,6 +59,7 @@ html {
   --background: 240, 5%, 18%;
   --primary: 215, 73%, 74%;
   --darkgrey: 0, 0%, 13%;
+  --btnactive: 189, 10%, 14%;
   --linkhover: 0, 0%, 14%;
   --label: 0, 0%, 81%;
   --tailwindbg: 223, 49%, 8%;
