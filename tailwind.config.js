@@ -10,6 +10,7 @@ export default {
         primary: "hsl(var(--primary))",
         selectionbg: "hsl(var(--selectionbg))",
         selectiontxt: "hsl(var(--selectiontxt))",
+        btnactive: "hsl(var(--btnactive))",
         darkgrey: "hsl(var(--darkgrey))",
         linkhover: "hsl(var(--linkhover))",
         required: "hsl(var(--required))",
