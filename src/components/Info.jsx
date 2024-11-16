@@ -1,6 +1,6 @@
 import React from 'react'
-import profileImg from '../../public/assets/profile-image.jpeg';
-import cv from '../../public/assets/cv-johancarrasco.pdf'
+import profileImg from '/assets/images/profile-image.jpeg';
+import cv from '/assets/cv-johancarrasco.pdf'
 import { RiFacebookBoxFill, RiGithubFill, RiLinkedinBoxFill } from '@remixicon/react';
 import Button from './Button';
 
@@ -13,14 +13,14 @@ const Info = ({name, profession, btnText}) => {
           <h1 className='text-3xl md:text-5xl'>{name}</h1>
           <h3 className='text-xl md:text-2xl text-primary'>{profession}</h3>
           <p className='text-base xl:text-left'>
-          Soy un estudiante de Informática en Inacap, en busca de una práctica profesional para avanzar en mi carrera como ingeniero de software. Me apasiona la tecnología y el desarrollo de software. Sobresalgo en el trabajo en equipo, la priorización de tareas y mantener la calma bajo presión. Estoy comprometido con el aprendizaje continuo y con aportar soluciones innovadoras y efectivas en cada proyecto.
+          Desarrollador Full Stack autodidacta con conocimientos sólidos en Django, React, Tailwind, HTML, CSS, JavaScript y MySQL. Apasionado por el aprendizaje continuo y la creación de aplicaciones web modernas y funcionales. Me especializo en resolver problemas con soluciones escalables y centradas en el usuario, buscando mi primera oportunidad laboral para aplicar y expandir mis habilidades técnicas en proyectos desafiantes.
           </p>
           <Button text={<a href={cv} download="">{btnText}</a>}></Button>
         </div>
         <ul className='flex gap-6 xl:flex-col'>
-          <a href='https://github.com/johan2160' target='_blank'><RiGithubFill className='transition-colors text-primary hover:text-selectionbg' /></a>
-          <a href='https://www.linkedin.com/in/johan-carrasco-493a85319' target='_blank'><RiLinkedinBoxFill className='transition-colors text-primary hover:text-selectionbg' /></a>
-          <a href='https://www.facebook.com/' target='_blank'><RiFacebookBoxFill className='transition-colors text-primary hover:text-selectionbg' /></a>
+          <a href='https://github.com/johan2160' target='_blank'><RiGithubFill className='transition-colors text-primary hover:opacity-85' /></a>
+          <a href='https://www.linkedin.com/in/johan-carrasco-493a85319' target='_blank'><RiLinkedinBoxFill className='transition-colors text-primary hover:opacity-85' /></a>
+          <a href='https://www.facebook.com/' target='_blank'><RiFacebookBoxFill className='transition-colors text-primary hover:opacity-85' /></a>
         </ul>
       </div>
     </section>
