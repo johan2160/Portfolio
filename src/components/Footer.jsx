@@ -9,9 +9,9 @@ const Footer = ({name}) => {
         <h3 className='text-2xl'>{name}</h3>
         <p>Gracias por tomarte el tiempo de navegar por mi portafolio 🎊</p>
         <ul className='flex gap-6'>
-            <a href='https://github.com/johan2160' target='_blank'><RiGithubFill className='transition-colors text-content2 hover:text-selectionbg' /></a>
-            <a href='https://www.linkedin.com/in/johan-carrasco-493a85319' target='_blank'><RiLinkedinBoxFill className='transition-colors text-content2 hover:text-selectionbg' /></a>
-            <a href='https://www.facebook.com/' target='_blank'><RiFacebookBoxFill className='transition-colors text-content2 hover:text-selectionbg' /></a>
+            <a href='https://github.com/johan2160' target='_blank'><RiGithubFill className='transition-colors text-content2 hover:opacity-85' /></a>
+            <a href='https://www.linkedin.com/in/johan-carrasco-493a85319' target='_blank'><RiLinkedinBoxFill className='transition-colors text-content2 hover:opacity-85' /></a>
+            <a href='https://www.facebook.com/' target='_blank'><RiFacebookBoxFill className='transition-colors text-content2 hover:opacity-85' /></a>
           </ul>
       </div>
     </footer>
