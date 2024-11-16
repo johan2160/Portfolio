@@ -6,13 +6,13 @@
   :root {
     --content: 0, 0%, 0%;
     --content2: 0, 0%, 98%;
-    --background: 0, 0%, 98%;
-    --primary: 216, 70%, 49%;
+    --background: 0, 0%, 100%;
+    --primary: 217, 45%, 41%;
     --selectionbg: 216, 68%, 85%;
     --selectiontxt: 210, 3%, 15%;
     --btnactive: 0, 0%, 91%;
     --darkgrey: 0, 0%, 96%;
-    --linkhover: 0, 0%, 94%;
+    --linkhover: 230, 30%, 50%;
     --required: 11, 100%, 54%;
     --label: 0, 0%, 15%;
     --tailwindbg: 223, 49%, 8%;
@@ -50,37 +50,35 @@ html {
 }
 
 @media (prefers-color-scheme:dark) {
+  :root[data-theme="dark"] {
+    --content: 240, 7%, 92%;
+    --content2: 0, 0%, 0%;
+    --background: 224, 9%, 24%;
+    --primary: 221, 42%, 81%;
+    --darkgrey: 0, 0%, 13%;
+    --btnactive: 189, 10%, 14%;
+    --linkhover: 0, 0%, 14%;
+    --label: 0, 0%, 81%;
+    --tailwindbg: 223, 49%, 8%;
+    --tailwindcolor: 198, 93%, 60%;
+    --reactbg: 220, 15%, 16%;
+    --reactcolor: 191, 65%, 60%;
+    --bootstrapbg: 263, 34%, 36%;
+    --bootstrapcolor: 0, 0%, 100%;
+    --nodejsbg: 0, 0%, 100%;
+    --nodejscolor: 120, 24%, 52%;
+    --jsbg: 54, 93%, 53%;
+    --jscolor: 0, 0%, 0%;
+    --cssbg: 228, 78%, 52%;
+    --csscolor: 0, 0%, 100%;
+    --htmlbg: 12, 78%, 52%;
+    --htmlcolor: 0, 0%, 100%;
+    --githubcolor: 0, 0%, 100%;
   
-}
-
-:root[data-theme="dark"] {
-  --content: 240, 7%, 92%;
-  --content2: 0, 0%, 0%;
-  --background: 240, 5%, 18%;
-  --primary: 215, 73%, 74%;
-  --darkgrey: 0, 0%, 13%;
-  --btnactive: 189, 10%, 14%;
-  --linkhover: 0, 0%, 14%;
-  --label: 0, 0%, 81%;
-  --tailwindbg: 223, 49%, 8%;
-  --tailwindcolor: 198, 93%, 60%;
-  --reactbg: 220, 15%, 16%;
-  --reactcolor: 191, 65%, 60%;
-  --bootstrapbg: 263, 34%, 36%;
-  --bootstrapcolor: 0, 0%, 100%;
-  --nodejsbg: 0, 0%, 100%;
-  --nodejscolor: 120, 24%, 52%;
-  --jsbg: 54, 93%, 53%;
-  --jscolor: 0, 0%, 0%;
-  --cssbg: 228, 78%, 52%;
-  --csscolor: 0, 0%, 100%;
-  --htmlbg: 12, 78%, 52%;
-  --htmlcolor: 0, 0%, 100%;
-  --githubcolor: 0, 0%, 100%;
-
-  .shadow-gradient:hover {
-    box-shadow: -10px -10px 20px 0px #8db5ed4f;
-    position: relative;
-    z-index: 0;
+    .shadow-gradient:hover {
+      box-shadow: -10px -10px 20px 0px #8db5ed4f;
+      position: relative;
+      z-index: 0;
+    }
   }
 }
