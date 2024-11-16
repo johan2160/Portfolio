@@ -12,7 +12,6 @@ export default {
         selectiontxt: "hsl(var(--selectiontxt))",
         btnactive: "hsl(var(--btnactive))",
         darkgrey: "hsl(var(--darkgrey))",
-        linkhover: "hsl(var(--linkhover))",
         required: "hsl(var(--required))",
         label: "hsl(var(--label))",
         tailwindbg: "hsl(var(--tailwindbg))",
