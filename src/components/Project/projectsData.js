@@ -10,7 +10,7 @@ import libraryProject from "/assets/images/library-project.png";
 export const projects = [
   {
     id: 0,
-    name: "Sistema de Foros",
+    name: "Forovox",
     image: sistemaDeForos,
     technologies: [
       {
@@ -33,7 +33,7 @@ export const projects = [
   },
   {
     id: 1,
-    name: "Library Project",
+    name: "Library",
     image: libraryProject,
     technologies: [
       {
