@@ -3,41 +3,42 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar = ({ name, link1, link2, link3 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [theme, setTheme] = useState('system'); 
+  const [theme, setTheme] = useState(() => {
+    // Intenta obtener el tema guardado en localStorage
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('theme') || 'system';
+    }
+    return 'system';
+  });
 
   const applyTheme = (mode) => {
     const root = document.documentElement;
-    if (mode === 'system') {
-      root.removeAttribute('data-theme');
+
+    if (mode === 'dark' || (mode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.setAttribute('data-theme', 'dark');
     } else {
-      root.setAttribute('data-theme', mode);
+      root.setAttribute('data-theme', 'light');
     }
   };
 
   const changeTheme = (newTheme) => {
     setTheme(newTheme);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('theme', newTheme);
+    }
     applyTheme(newTheme);
   };
 
-  const detectSystemTheme = () => {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const systemTheme = prefersDark ? 'dark' : 'light';
-    setTheme(systemTheme);
-    applyTheme(systemTheme);
-  };
-
   useEffect(() => {
+    applyTheme(theme);
+
     if (theme === 'system') {
-      detectSystemTheme();
-    } else {
-      applyTheme(theme);
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      const handleSystemChange = () => applyTheme('system');
+
+      mediaQuery.addEventListener('change', handleSystemChange);
+      return () => mediaQuery.removeEventListener('change', handleSystemChange);
     }
-
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleSystemChange = () => detectSystemTheme();
-
-    mediaQuery.addEventListener('change', handleSystemChange);
-    return () => mediaQuery.removeEventListener('change', handleSystemChange);
   }, [theme]);
 
   const toggleMenu = () => {
@@ -71,18 +72,18 @@ const Navbar = ({ name, link1, link2, link3 }) => {
               {link3}
             </a>
           </li>
-          
+
           {theme !== 'light' && (
             <li className='flex items-center justify-center gap-2'>
               <p className='uppercase cursor-pointer md:hidden' onClick={() => changeTheme('light')}>Modo claro</p>
-              <RiSunLine className='cursor-pointer' onClick={() => changeTheme('light')}/>
+              <RiSunLine className='cursor-pointer' onClick={() => changeTheme('light')} />
             </li>
           )}
 
           {theme !== 'dark' && (
             <li className='flex items-center justify-center gap-2'>
               <p className='uppercase cursor-pointer md:hidden' onClick={() => changeTheme('dark')}>Modo oscuro</p>
-              <RiMoonLine className='cursor-pointer' onClick={() => changeTheme('dark')}/>
+              <RiMoonLine className='cursor-pointer' onClick={() => changeTheme('dark')} />
             </li>
           )}
         </ul>
