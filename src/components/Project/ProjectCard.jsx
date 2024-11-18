@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
         <img
           src={project.image}
           alt={project.name}
-          className="max-w-[494px] w-full rounded-md shadow-gradient"
+          className="max-w-[494px] w-full md:w-auto rounded-md shadow-gradient"
         />
       )}
       <div className="flex flex-col items-center gap-6 xl:items-start">
@@ -47,7 +47,7 @@ const ExternalLink = ({ href, label, icon }) => {
       href={href}
       target={href ? '_blank' : ''}
       rel="noopener noreferrer"
-      className="flex p-[10px] rounded-md gap-2 bg-darkgrey text-content hover:opacity-90 transition-colors"
+      className="flex p-[10px] rounded-md gap-2 bg-darkgrey text-content hover:opacity-85 transition-colors"
     >
       {icon}
       <span>{label}</span>
