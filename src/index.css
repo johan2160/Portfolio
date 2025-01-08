@@ -6,7 +6,7 @@
   :root {
     --content: 0, 0%, 0%;
     --content2: 0, 0%, 98%;
-    --background: 0, 0%, 100%;
+    --background: 230, 22%, 90%;
     --primary: 217, 45%, 41%;
     --selectionbg: 216, 68%, 85%;
     --selectiontxt: 210, 3%, 15%;
@@ -29,11 +29,11 @@
     --csscolor: 0, 0%, 100%;
     --htmlbg: 12, 78%, 52%;
     --htmlcolor: 0, 0%, 100%;
-    --githubcolor: 213, 13%, 14%;    
+    --githubcolor: 213, 13%, 14%;
   }
 }
 
-html {  
+html {
   @apply scroll-smooth;
 }
 
@@ -50,9 +50,9 @@ html {
 :root[data-theme="dark"] {
   --content: 240, 7%, 92%;
   --content2: 0, 0%, 0%;
-  --background: 224, 9%, 24%;
+  --background: 222, 46%, 12%;
   --primary: 221, 42%, 81%;
-  --darkgrey: 0, 0%, 13%;
+  --darkgrey: 231, 16%, 15%;
   --btnactive: 189, 10%, 14%;
   --linkhover: 0, 0%, 14%;
   --label: 0, 0%, 81%;
